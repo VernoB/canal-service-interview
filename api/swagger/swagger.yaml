@@ -1,0 +1,46 @@
+swagger: "2.0"
+info:
+  version: "1.0.1"
+  title: "Canal Service Interview"
+host: localhost:8080
+basePath: /
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /graphql:
+    post:
+      description: Returns the user status
+      summary: Find user by status
+      operationId: findByID
+      produces: 
+      - application/json
+      responses:
+        '200':
+          description: user status
+          schema:
+            $ref: "#/definitions/RootQuery"
+      parameters:
+        - in: body
+          name: user
+          description: Check user status
+          required: true
+          schema: 
+            $ref: "#/definitions/graphqlQuery"
+definitions:
+  graphqlQuery:
+    type: 'object'
+    properties:
+      query:
+        type: 'string'
+  RootQuery:
+    type: 'object'
+    properties:
+      data:
+        type: 'object'
+        
+        
+      

@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VernoB/canal-service-interview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "express-validator": "^6.14.0",
+    "graphql": "^14.0.2",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.0",
+    "parse": "^3.4.2",
+    "swagger-ui": "^4.11.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
